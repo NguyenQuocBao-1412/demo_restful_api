@@ -16,8 +16,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+
 mydata:
   secretkey: DdBkCPYyuwsr4TuAikzGwHBGBQlsos1KDAJ6OwRUsww=
+
 upload:
   file:
     path: D:\Workspace\Java\BootCamp004\uploads
@@ -28,5 +30,12 @@ logging:
   level:
     root: info
   file:
-
     name: ./log/dev.log
+
+mailServer:
+  host: smtp.gmail.com
+  port: 587
+  email: 12a1nguyenquocbao1412@gmail.com
+  password: "ndpc raht qwwp tqhv"
+  protocol: smtp
+  isSSL: false

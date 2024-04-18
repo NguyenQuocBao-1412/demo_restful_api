@@ -1,12 +1,9 @@
-package com.myproject.uniclub.service.imp;
+package com.myproject.uniclub.service;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.nio.file.Path;
-import java.util.stream.Stream;
-
-public interface IFilesStorageService {
+public interface FileService {
 
     public void save(MultipartFile file);
 

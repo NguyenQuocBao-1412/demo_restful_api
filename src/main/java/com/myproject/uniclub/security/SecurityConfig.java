@@ -61,6 +61,9 @@ public class SecurityConfig {
                         a.requestMatchers("/file/**").permitAll();
                         a.requestMatchers(HttpMethod.GET,"/product/**").hasRole("ADMIN");
 
+                        //Mails
+                    a.requestMatchers(("/mails/**")).permitAll();
+
                         //anyRequest
                         a.anyRequest().authenticated();
                     }

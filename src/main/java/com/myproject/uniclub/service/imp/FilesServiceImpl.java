@@ -1,6 +1,6 @@
-package com.myproject.uniclub.service;
+package com.myproject.uniclub.service.imp;
 
-import com.myproject.uniclub.service.imp.IFilesStorageService;
+import com.myproject.uniclub.service.FileService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.nio.file.*;
 
 @Service
-public class FilesService implements IFilesStorageService {
+public class FilesServiceImpl implements FileService {
     @Value("${upload.file.path}")
     private String path;
 
